@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <div class=" top d-flex">
+            <h1>Dojo Weather</h1>
+            <h3 onclick="loading()">Burbank</h3>
+            <h3 onclick="loading()">Chicago</h3>
+            <h3 onclick="loading()">Dallas</h3>
+            
+        </div>
+        <div class=" nav d-flex">
+            <h2>San Jose</h2>
+            <div class="d-flex">
+                <label for="teperature">show temperature in <select id="select1" onchange="choosedegree(this)">
+                    <option value="">°C</option>
+                    <option value="">°F</option>
+            </select></label>
+                
+            </div>
+            
+        </div>
+        <div class=" main d-flex">
+            <div class="section">
+                <h3>Today</h3>
+                <img src="./assets/some_rain.png" alt="somerain">
+                <p>Some Rain</p>
+                <div class="temp d-flex">
+                    <p class="high">24°</p>
+                    <p class="low">18°</p>
+                </div>
+            </div>
+            <div class="section">
+                <h3>Tomorrow</h3>
+                <img src="./assets/some_sun.png" alt="somesone">
+                <p>Some Sun</p>
+                <div class="temp d-flex">
+                    <p class="high">27°</p>
+                    <p class="low">19°</p>
+                </div>
+            </div>
+            <div class="section">
+                <h3>Friday</h3>
+                <img src="./assets/some_clouds.png" alt="someclouds">
+                <p>Some Clouds</p>
+                <div class="temp d-flex">
+                    <p class="high">21°</p>
+                    <p class="low">16°</p>
+                </div>
+            </div>
+            <div class="section">
+                <h3>Tomorow</h3>
+                <img src="./assets/some_sun.png" alt="somesone">
+                <p>Some Sun</p>
+                <div class="temp d-flex">
+                    <p class="high">26°</p>
+                    <p class="low">21°</p>
+                </div>
+            </div>
+        </div>
+        <div id="policy" class=" last d-flex">
+            <div class=" cookie d-flex">
+                <img src="./assets/cookie.png" alt="cookie">
+                <div>
+                    <h3>Stop! Cookie time</h3>
+                    <p>We use cookies (sadly not the editable ones) to personalize contents and ads, to provide social media features and to analyse our traffic. <a href="">Read more</a></p>
+                </div>
+            </div>
+
+            <button class="btn btn-success" onclick=afterr()>I Accept</button>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
